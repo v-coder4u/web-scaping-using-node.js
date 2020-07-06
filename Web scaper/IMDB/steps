@@ -1,0 +1,31 @@
+Website: https://www.imdb.com
+
+
+Web Scrapping using node.js
+
+* Go to https://www.npmjs.com
+* Search for cheerio
+* Search for Request-Promise
+* Search for Json2csv
+
+Console:
+
+npm init -y
+npm install request-promise request cheerio json2csv
+
+Scrap console first:
+ 
+* $('div[class="title_wrapper"] > h1').text().trim()
+* $('div[class = "ratingValue"] > strong > span').text() 
+* $('div[class = "summary_text"]').text().trim()
+* $('a[title = "See more release dates"]').text().trim()
+
+
+
+Accept Encoding:
+
+* Accept: application/json, text/plain, */*
+* Accept-Encoding: gzip, deflate, br
+* Accept-Language: en-US,en;q=0.9,hi;q=0.8,th;q=0.7
+
+
